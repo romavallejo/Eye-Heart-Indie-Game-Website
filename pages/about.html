@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="../assets/images/heart64.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/about-page.css">
+    <script src="../assets/js/navbar.js" defer></script>
+</head>
+<body onload="viewMode()">
+    <header>
+        <nav>
+            <ul>
+                <li class="home"><a href="../index.html">Eye Heart Games</a></li>
+                <li class="hideOnMobile"><a href="games.html">Games</a></li>
+                <li class="hideOnMobile"><a href="">About</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="hideOnMobile" onclick="changeLight()"><img class="color-light" src="../assets/images/sun-moon.svg" width="28px"></li>
+                <li class="menu-button" onclick="showSidebar()"><img class="color-light" src="../assets/images/list-light.svg"></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><img class="color-light" src="../assets/images/x-circle-light.svg"></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li onclick="changeLight()"><img class="color-light" src="../assets/images/sun-moon.svg" width="28px"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="heart-holder">
+            <img class="heart" src="../assets/images/bigEyeHearthNoWings.png" alt="eye heart">
+        </div>
+        <div class="about">
+            <div class="about-eye-heart">
+                <h1>Eye Heart Games</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil sunt nam impedit, omnis voluptates quam, aliquam nostrum tempora est iure officia atque? Nam eius saepe omnis porro a laudantium. Laborum hic magnam, fugit praesentium esse aspernatur dolorem earum voluptate adipisci odit quidem dolore asperiores fuga nam a debitis architecto! Quaerat.</p>
+            </div>
+            <div class="about-me">
+                <h1>Me Rodrigo Martínez V.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea necessitatibus veritatis perspiciatis possimus obcaecati atque beatae culpa nisi placeat aspernatur, similique soluta hic quis aliquam molestias eaque, explicabo sunt consequuntur? Esse reprehenderit ut rerum earum deleniti tempora numquam nemo laborum ea autem laudantium, quasi, praesentium voluptates at qui placeat et!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class ="rights">All rights reserved.</p>
+    </footer>
+</body>
+</html>

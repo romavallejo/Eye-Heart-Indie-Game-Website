@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="icon" href="../assets/images/heart64.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/games-page.css">
+    <script src="../assets/js/navbar.js" defer></script>
+</head>
+<body onload="viewMode()">
+    <header>
+        <nav>
+            <ul>
+                <li class="home"><a href="../index.html">Eye Heart Games</a></li>
+                <li class="hideOnMobile"><a href="">Games</a></li>
+                <li class="hideOnMobile"><a href="about.html">About</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="hideOnMobile" onclick="changeLight()"><img class="color-light" src="../assets/images/sun-moon.svg" width="28px"></li>
+                <li class="menu-button" onclick="showSidebar()"><img class="color-light" src="../assets/images/list-light.svg"></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><img class="color-light" src="../assets/images/x-circle-light.svg"></li>
+                <li><a href="">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li onclick="changeLight()"><img class="color-light" src="../assets/images/sun-moon.svg" width="28px"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="newest-game-card">
+                <img class="left-wing" src="../assets/images/leftWing.png">
+                <img class="right-wing" src="../assets/images/rightWing.png">
+                <h2>Newest Game</h1>
+                <h1>Title of game</h1>
+                <img class="poster" src="../assets/images/gameCover.jpg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, consequuntur architecto. Quibusdam veniam ratione laboriosam minus saepe vel molestiae rerum.</p>
+        </div>
+        <div class="games-grid">
+           <div class="game-card">
+                <h1>Title of game</h1>
+                <img class="poster" src="../assets/images/gameCover.jpg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, consequuntur architecto. Quibusdam veniam ratione laboriosam minus saepe vel molestiae rerum.</p>
+            </div>
+            <div class="game-card">
+                <h1>Title of game</h1>
+                <img class="poster" src="../assets/images/gameCover.jpg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, consequuntur architecto. Quibusdam veniam ratione laboriosam minus saepe vel molestiae rerum.</p>
+            </div>
+            <div class="game-card">
+                <h1>Title of game</h1>
+                <img class="poster" src="../assets/images/gameCover.jpg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, consequuntur architecto. Quibusdam veniam ratione laboriosam minus saepe vel molestiae rerum.</p>
+            </div>
+            <div class="game-card">
+                <h1>Title of game</h1>
+                <img class="poster" src="../assets/images/gameCover.jpg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, consequuntur architecto. Quibusdam veniam ratione laboriosam minus saepe vel molestiae rerum.</p>
+            </div>
+            <div class="game-card">
+                <h1>Title of game</h1>
+                <img class="poster" src="../assets/images/gameCover.jpg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, consequuntur architecto. Quibusdam veniam ratione laboriosam minus saepe vel molestiae rerum.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class ="rights">All rights reserved.</p>
+    </footer>
+    <script src="../assets/js/games.js"></script>
+</body>
+</html>

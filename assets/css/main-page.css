@@ -1,0 +1,71 @@
+@import url("base.css");
+
+main {
+    position: relative; 
+    overflow: auto; 
+    overflow-x: hidden;
+}
+
+.background-eyeheart-img {
+    position: absolute;
+    width: 1450px;
+    height:auto;
+    object-fit: contain;
+    z-index: -1; 
+    opacity: 0.5;
+    left: -400px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.tagline {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow: var(--base-variant) 1px 1px 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.game-card {
+    background-color: color-mix(in srgb, var(--background-color) 50%, transparent);
+    border-radius: 2rem;
+    box-shadow:0 0 10px var(--accent-color);
+    color: var(--primary-color);
+    max-width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+.game-card img {
+    width: 80%;
+}
+
+@media(max-width: 950px) {
+    .background-eyeheart-img {
+        width: 900px;
+        left: 0;
+        transform: none;
+        height: auto;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .container {
+        flex-direction: column;
+    }
+    .tagline {
+        min-height: 350px;
+        display: flex;
+        align-items: center;
+    }
+}
