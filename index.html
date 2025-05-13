@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Heart Games</title>
+    <link rel="icon" href="assets/images/heart64.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main-page.css">
+    <script src="assets/js/navbar.js" defer></script>
+</head>
+<body onload="viewMode()">
+    <header>
+        <nav>
+            <ul>
+                <li class="home"><a href="">Eye Heart Games</a></li>
+                <li class="hideOnMobile"><a href="pages/games.html">Games</a></li>
+                <li class="hideOnMobile"><a href="pages/about.html">About</a></li>
+                <li class="hideOnMobile"><a href="pages/contact.html">Contact</a></li>
+                <li class="hideOnMobile" onclick="changeLight()"><img class="color-light" src="assets/images/sun-moon.svg" width="28px"></li>
+                <li class="menu-button" onclick="showSidebar()"><img class="color-light" src="assets/images/list-light.svg"></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><img class="color-light" src="assets/images/x-circle-light.svg"></li>
+                <li><a href="pages/games.html">Games</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li onclick="changeLight()"><img class="color-light" src="assets/images/sun-moon.svg" width="28px"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="background-eyeheart-img" src="assets/images/bigEyeHeartLogo.png">
+        <div class="container">
+            <div class="tagline">
+                <p>Tagline.</p>
+            </div>
+            <div class="game-card">
+                <h2>Newest Game</h1>
+                <h1>Title of game</h1>
+                <img src="assets/images/gameCover.jpg">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, consequuntur architecto. Quibusdam veniam ratione laboriosam minus saepe vel molestiae rerum.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class ="rights">All rights reserved.</p>
+    </footer>
+    <script src="assets/js/home.js"></script>
+</body>
+</html>
